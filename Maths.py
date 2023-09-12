@@ -8,4 +8,5 @@ def Expense(city: float, highway: float, combination_ting: float, ppl: float,kmd
     annual_highway = highway * kmd//100 * ppl
     annual_combined = combination_ting * kmd//100 * ppl
     print(annual_combined)
-Expense(car.city_fuel_economy,car.highway_fuel_economy,car.combined_fuel_economy,1.50,car.kilometers_driven)
+Expense(car.city_fuel_economy,car.highway_fuel_economy,car.combined_fuel_economy,1.50,car.kmd)
+

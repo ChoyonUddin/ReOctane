@@ -1,12 +1,22 @@
 from datetime import datetime 
-
+from tkinter import *
 class Car:
-    def __init__(self,city_fuel_economy:float,highway_fuel_economy:float,combined_fuel_economy:float,kilometres_driven:float):
+    def __init__(self,brand:str,model:str,year:str,city_fuel_economy:float,highway_fuel_economy:float,combined_fuel_economy:float,kilometres_driven:float):
+        self.brand = brand
+        self.model = model
+        self.year = year
         self.city_fuel_economy = city_fuel_economy
         self.highway_fuel_economy = highway_fuel_economy
         self.combined_fuel_economy = combined_fuel_economy
-        self.kilometers_driven = kilometres_driven
-car = Car(5.7,6.4,6,20000)
+        self.kmd = kilometres_driven
+
+
+#Next step is to implement tkinter such that the parameters for car are through user input
+#After that some work with a slider for Kilometres_driven
+#Then Frontend stuff
+car = Car('Lexus','Nx 350h','2024',5.7,6.4,6,20000)
+
+#Notes
 '''
 Variables for expense:
 fuel economy: highway, city, combined
